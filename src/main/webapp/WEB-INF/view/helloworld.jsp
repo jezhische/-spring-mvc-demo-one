@@ -12,5 +12,7 @@
 <br/><br/>
     <%--Здесь указываем value нашего name--%>
     <h3>Student name is: ${param.studentName}</h3>
+<br/><hr/><br/>
+    <a href="showForm"><h2>back to submit page</h2></a>
 </body>
 </html>

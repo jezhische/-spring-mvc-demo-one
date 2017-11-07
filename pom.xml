@@ -57,18 +57,20 @@
           <version>${logging.version}</version>
       </dependency>
 
-      <!--<dependency>-->
-          <!--<groupId>javax</groupId>-->
-          <!--<artifactId>javaee-api</artifactId>-->
-          <!--<version>7.0</version>-->
-      <!--</dependency>-->
-
+      <!--for HttpServletRequest etc-->
       <dependency>
           <groupId>javax</groupId>
-          <artifactId>javaee-web-api</artifactId>
+          <artifactId>javaee-api</artifactId>
           <version>7.0</version>
-          <scope>provided</scope>
       </dependency>
+
+      <!--for HttpServletRequest etc-->
+      <!--<dependency>-->
+          <!--<groupId>javax</groupId>-->
+          <!--<artifactId>javaee-web-api</artifactId>-->
+          <!--<version>7.0</version>-->
+          <!--<scope>provided</scope>-->
+      <!--</dependency>-->
 
       <!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl -->
       <!--<dependency>-->
@@ -77,11 +79,13 @@
           <!--<version>${javax.servlet.jsp.jstl.version}</version>-->
       <!--</dependency>-->
       <!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/javax.servlet.jsp.jstl-api -->
-      <dependency>
-          <groupId>javax.servlet.jsp.jstl</groupId>
-          <artifactId>javax.servlet.jsp.jstl-api</artifactId>
-          <version>${javax.servlet.jsp.jstl.version}</version>
-      </dependency>
+
+      <!--нужно?-->
+      <!--<dependency>-->
+          <!--<groupId>javax.servlet.jsp.jstl</groupId>-->
+          <!--<artifactId>javax.servlet.jsp.jstl-api</artifactId>-->
+          <!--<version>${javax.servlet.jsp.jstl.version}</version>-->
+      <!--</dependency>-->
 
 
   </dependencies>
@@ -104,7 +108,7 @@
               <version>${tomcat7.maven.plugin.version}</version>
               <configuration>
                   <port>8081</port>
-                  <path>/</path>
+                  <path>/mvc</path>
               </configuration>
           </plugin>
       </plugins>
