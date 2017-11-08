@@ -57,20 +57,20 @@
           <version>${logging.version}</version>
       </dependency>
 
+      <!--НЕ ЭТО! ИНАЧЕ КОНФЛИКТ!-->
+      <!--<dependency>-->
+          <!--<groupId>javax</groupId>-->
+          <!--<artifactId>javaee-api</artifactId>-->
+          <!--<version>7.0</version>-->
+      <!--</dependency>-->
+
       <!--for HttpServletRequest etc-->
       <dependency>
           <groupId>javax</groupId>
-          <artifactId>javaee-api</artifactId>
+          <artifactId>javaee-web-api</artifactId>
           <version>7.0</version>
+          <scope>provided</scope>
       </dependency>
-
-      <!--for HttpServletRequest etc-->
-      <!--<dependency>-->
-          <!--<groupId>javax</groupId>-->
-          <!--<artifactId>javaee-web-api</artifactId>-->
-          <!--<version>7.0</version>-->
-          <!--<scope>provided</scope>-->
-      <!--</dependency>-->
 
       <!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl -->
       <!--<dependency>-->

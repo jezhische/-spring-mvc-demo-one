@@ -15,7 +15,11 @@ HelloWorldController, который возвращает helloword.jsp). У э�
         <input type="text" name="studentName" placeholder="What's your name?"/>
         <input type="submit"/>
     </form>
-
+<br/><hr/><br/>
+    <form action="processFormVersionTwo" method="get">
+        <input type="text" name="studentNameV2" placeholder="Give me your name, dude!"/>
+        <input type="submit"/>
+    </form>
 
 <br/><hr/><br/>
     <a href="/mvc"><h2>home</h2></a>
