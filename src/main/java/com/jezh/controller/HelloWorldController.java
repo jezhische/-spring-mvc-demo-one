@@ -27,6 +27,10 @@ public class HelloWorldController {
         String message = "Yo! " + request.getParameter("studentNameV2").toUpperCase() + "!";
         // todo: add msg to the model - like the pair get?name=value (here is "object_name=object")
         model.addAttribute("msg", message);
+        int i = 25;
+        model.addAttribute("inti", i);
+        Object obj = new Object();
+        model.addAttribute("obji", obj);
         return "helloworld";
     }
 }

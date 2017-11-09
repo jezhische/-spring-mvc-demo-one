@@ -13,12 +13,12 @@ HelloWorldController, который возвращает helloword.jsp). У э�
 это name и содержимое текстовой области, т.е. "/processForm?studentName=Djohn Doe"--%>
     <form action="processForm" method="get">
         <input type="text" name="studentName" placeholder="What's your name?"/>
-        <input type="submit"/>
+        <input type="submit" value="Sign in"/>
     </form>
 <br/><hr/><br/>
     <form action="processFormVersionTwo" method="get">
         <input type="text" name="studentNameV2" placeholder="Give me your name, dude!"/>
-        <input type="submit"/>
+        <input type="submit" value="meet your destiny!"/>
     </form>
 
 <br/><hr/><br/>

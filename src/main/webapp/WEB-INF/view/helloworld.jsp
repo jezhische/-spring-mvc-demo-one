@@ -15,6 +15,9 @@
 <br/><hr/><br/>
     <%--add the model name:--%>
     <h3>message: ${msg}</h3>
+    <br/>
+    int here: ${inti}
+    <br/> Object here: ${obji}
 <br/><hr/><br/>
     <a href="showForm"><h2>back to submit page</h2></a>
 </body>
