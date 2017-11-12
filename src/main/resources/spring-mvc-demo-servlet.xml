@@ -17,6 +17,9 @@
     <context:component-scan base-package="com.jezh"/>
     <!--Step 4: Add support for conversion, formatting and validation-->
     <mvc:annotation-driven/>
+
+    <!--Когда mapping не совпадает с location  - почему-то не работает css. А так маппинг м.б. любой (?почему так?)-->
+    <mvc:resources mapping="/static/**" location="/stat/images/, classpath:static/" cache-period="100" />
     <!--Step 5: Define Spring MVC View Resolver-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/view/"/>
