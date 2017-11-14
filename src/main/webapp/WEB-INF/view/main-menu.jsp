@@ -5,7 +5,7 @@
 <head>
 
 <%--todo: ИСПОЛЬЗОВАНИЕ JSTL:--%>
-    <link href="<c:url value="/static/css/test.css" />" rel="stylesheet" id="how">
+    <link href="<c:url value="/static/css/test.css" />" rel="stylesheet">
 
 <%--todo: ИСПОЛЬЗОВАНИЕ БИБЛИОТЕКИ SPRING:--%>
         <%--<spring:url value="/static/css/test.css" var="test.css"/>--%>
@@ -26,8 +26,9 @@
 <input type="button" onclick="dosomething()" value="Click Me"/>
 <br/><br/>
 
-<%--todo: NB: первая запись /static отображает МАППИНГ, а не реальный путь; путь же прописан в spring-mvc-demo-servlet.xml
-как переменная location="/stast/images/, classpath:static/"--%>
+<%--todo: NB: первая запись /static отображает МАППИНГ, а не реальный путь; пути же прописаны в spring-mvc-demo-servlet.xml
+как переменная location="/stat/images/, classpath:static/" Т.е. "/static" - это корень всех ресурсов, где бы они
+ни хранились--%>
 <img src="${pageContext.request.contextPath}/static/spring-logo.png" />
 
 <br/><br/>
